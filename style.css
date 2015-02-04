@@ -124,11 +124,11 @@ a#logo img {
   margin: 20px 0;
 }
 #project-list .project.active .project-info {
-  background: -webkit-radial-gradient(circle at 30px 30px, #eb4548, #c04062);
-  background: -moz-radial-gradient(circle at 30px 30px, #eb4548, #c04062);
-  background: -o-radial-gradient(circle at 30px 30px, #eb4548, #c04062);
-  background: -ms-radial-gradient(circle at 30px 30px, #eb4548, #c04062);
-  background: radial-gradient(circle at 30px 30px, #eb4548, #c04062);
+  background: -webkit-radial-gradient(circle at 30px 30px, #eb4548, #cc3751);
+  background: -moz-radial-gradient(circle at 30px 30px, #eb4548, #cc3751);
+  background: -o-radial-gradient(circle at 30px 30px, #eb4548, #cc3751);
+  background: -ms-radial-gradient(circle at 30px 30px, #eb4548, #cc3751);
+  background: radial-gradient(circle at 30px 30px, #eb4548, #cc3751);
 }
 #project-list .project.active .project-info span {
   color: #fff !important;
