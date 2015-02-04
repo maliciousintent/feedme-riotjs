@@ -2,7 +2,8 @@
 projects-list
   
   #project-list
-    project-single(each="{ projects }")
+    .projects-all(each="{ projects }")
+      project-single(project="{ this }")
   
   script.
     this.projects = opts.projects

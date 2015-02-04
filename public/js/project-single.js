@@ -1,3 +1,6 @@
 
-riot.tag('project-single', '<div class="project active"> <div class="project-info"><span class="time-left">{ title }</span><span class="price">110,00 €</span><span class="title">Customer Website</span><span class="description">.COM and .IT Domains and #3 Emails addresses</span></div> <div class="project-actions"> <button class="pure-button"><i class="icon-check"></i></button> <button class="pure-button small-button"><i class="icon-archive"></i></button> </div> </div>', function(opts) {console.log('t', this)
+riot.tag('project-single', '<div class="project active"> <div class="project-info"><span class="time-left">{ timeLeft }</span><span class="price">{ project.amount }</span><span class="title">{ project.title }</span><span class="description">{ project.description }</span></div> <div class="project-actions"> <button class="pure-button"><i class="icon-check"></i></button> <button class="pure-button small-button"><i class="icon-archive"></i></button> </div> </div>', function(opts) {
+    this.project = this.opts.project;
+    this.timeLeft = moment(this.project.dueDate, 'x').fromNow()
+  
 });

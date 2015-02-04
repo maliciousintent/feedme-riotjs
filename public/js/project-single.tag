@@ -3,10 +3,10 @@ project-single
   
   .project.active
     .project-info
-      span.time-left { title }
-      span.price 110,00 €
-      span.title Customer Website
-      span.description .COM and .IT Domains and #3 Emails addresses
+      span.time-left { timeLeft }
+      span.price { project.amount }
+      span.title { project.title }
+      span.description { project.description }
     .project-actions
       button.pure-button
         i.icon-check
@@ -14,4 +14,5 @@ project-single
         i.icon-archive
 
   script.
-    console.log('t', this)
+    this.project = this.opts.project;
+    this.timeLeft = moment(this.project.dueDate, 'x').fromNow()

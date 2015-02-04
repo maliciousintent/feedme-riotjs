@@ -1,4 +1,12 @@
 doctype html
+
+//-
+    @@@@@@@@@@@@@@@@@@@ WARNING @@@@@@@@@@@@@@@@@@@@
+    if you modify layout.jade you need to re-compile
+        every file that extends it.
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+        
 html
   head
     title FeedMe or I'll kill you
@@ -16,6 +24,7 @@ html
   
     block body
     
+    script(src='/bower_components/momentjs/min/moment.min.js')
     script(src='https://cdn.jsdelivr.net/riot/2.0/riot.min.js')
     block tags
     
