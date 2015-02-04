@@ -22,5 +22,8 @@
     "gulp-serve": "^0.3.0",
     "gulp-watch": "^4.1.0",
     "jade": "^1.9.1"
+  },
+  "dependencies": {
+    "gulp-jade": "^0.11.0"
   }
 }

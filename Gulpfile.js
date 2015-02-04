@@ -13,25 +13,34 @@ var gulp = require('gulp');
 var riot = require('gulp-riot');
 var serve = require('gulp-serve');
 var watch = require('gulp-watch');
+var jade = require('gulp-jade');
 
 
 gulp.task('riot', function () {
   return gulp
-  .src('./public/js/*.tag')
-  .pipe(watch('./public/js/*.tag'))
+  .src(__dirname + '/public/js/*.tag')
+  .pipe(watch(__dirname + '/public/js/*.tag'))
   .pipe(
     riot({
-      compact: true,
+      compact: false,
       template: 'jade'
     })
   )
   .pipe(
-    gulp.dest('./public/js/')
+    gulp.dest(__dirname + '/public/js/')
   );
 });
 
-
 gulp.task('serve', serve('public'));
 
+gulp.task('templates', function() { 
+  gulp.src(__dirname + '/public/*.jade')
+    .pipe(watch(__dirname + '/public/*.jade'))
+    .pipe(jade({
+      locals: {}
+    }))
+    .pipe(gulp.dest(__dirname + '/public/'));
+});
 
-gulp.task('default', ['riot', 'serve']);
+
+gulp.task('default', ['riot', 'templates', 'serve']);
