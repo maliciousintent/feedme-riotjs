@@ -1,0 +1,232 @@
+.raleway-font,
+.pure-g [class *='pure-u'],
+.pure-g-r [class*="pure-u"],
+html,
+body,
+.pure-form input[type='text'],
+.pure-form input[type='password'],
+.pure-form input[type='email'],
+.pure-form input[type='url'],
+.pure-form input[type='date'],
+.pure-form input[type='month'],
+.pure-form input[type='time'],
+.pure-form input[type='datetime'],
+.pure-form input[type='datetime-local'],
+.pure-form input[type='week'],
+.pure-form input[type='number'],
+.pure-form input[type='search'],
+.pure-form input[type='tel'],
+.pure-form input[type='color'],
+.pure-form select,
+.pure-form textarea,
+.pure-form button {
+  font-family: 'Raleway', sans-serif;
+}
+.open-font,
+#project-list .project .project-info span.price {
+  font-family: 'Open Sans', sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.spacer-5 {
+  height: 5px;
+}
+.spacer-10 {
+  height: 10px;
+}
+.spacer-20 {
+  height: 20px;
+}
+.spacer-40 {
+  height: 40px;
+}
+.spacer-60 {
+  height: 60px;
+}
+.spacer-80 {
+  height: 80px;
+}
+.spacer-100 {
+  height: 100px;
+}
+.spacer-150 {
+  height: 150px;
+}
+.page {
+  width: 100%;
+}
+.page .padding {
+  padding: 50px 100px;
+}
+#add-new {
+  position: fixed;
+  right: 55px;
+  top: 55px;
+  background: #f2f2f2;
+  border: none;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  line-height: 60px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#add-new i {
+  display: block;
+  font-size: 28px;
+  color: rgba(0,0,0,0.3);
+}
+#add-new:hover {
+  background: #eaeaea;
+}
+.left {
+  float: left;
+  text-align: left;
+}
+.right {
+  float: right;
+  text-align: right;
+}
+a#logo {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  display: block;
+  -webkit-box-shadow: 0 0 50px 10px #fff;
+  box-shadow: 0 0 50px 10px #fff;
+}
+a#logo img {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+#project-list .project {
+  display: block;
+  margin-bottom: 30px;
+}
+#project-list .project.active .project-info {
+  background: -webkit-radial-gradient(circle at 30px 30px, #eb4548, #c04062);
+  background: -moz-radial-gradient(circle at 30px 30px, #eb4548, #c04062);
+  background: -o-radial-gradient(circle at 30px 30px, #eb4548, #c04062);
+  background: -ms-radial-gradient(circle at 30px 30px, #eb4548, #c04062);
+  background: radial-gradient(circle at 30px 30px, #eb4548, #c04062);
+}
+#project-list .project.active .project-info span {
+  color: #fff !important;
+}
+#project-list .project .project-info {
+  background: #f2f2f2;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 30px 50px 30px 100px;
+  color: #333;
+}
+#project-list .project .project-info span {
+  display: inline-block;
+  vertical-align: middle;
+}
+#project-list .project .project-info span.time-left {
+  font-size: 14px;
+  font-weight: 600;
+  color: #aaa;
+}
+#project-list .project .project-info span.price {
+  background: rgba(0,0,0,0.1);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 10px;
+  color: #fff;
+}
+#project-list .project .project-info span.title {
+  display: block;
+  font-size: 30px;
+  font-weight: 200;
+  margin: 5px 0 10px 0;
+}
+#project-list .project .project-info span.description {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6f6f6f;
+}
+#project-list .project:hover .project-actions {
+  visibility: visible;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#project-list .project .project-actions {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  -webkit-transition: opacity 0.5s ease 0.1s, visibility 0s ease;
+  -moz-transition: opacity 0.5s ease 0.1s, visibility 0s ease;
+  -o-transition: opacity 0.5s ease 0.1s, visibility 0s ease;
+  -ms-transition: opacity 0.5s ease 0.1s, visibility 0s ease;
+  transition: opacity 0.5s ease 0.1s, visibility 0s ease;
+  visibility: hidden;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+#project-list .project .project-actions .pure-button {
+  background: #f2f2f2;
+  border: none;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+  line-height: 60px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#project-list .project .project-actions .pure-button i {
+  display: block;
+  font-size: 28px;
+  color: rgba(0,0,0,0.3);
+}
+#project-list .project .project-actions .pure-button.small-button {
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+}
+#project-list .project .project-actions .pure-button.small-button i {
+  font-size: 22px;
+}
+#project-list .project .project-actions .pure-button:hover {
+  background: #eaeaea;
+}

@@ -1,0 +1,173 @@
+@import ('nib')
+
+
+_fm_primary = #eb4548
+_fm_secondary = #c04062
+
+_fm_gradient = radial-gradient(circle at 30px 30px, _fm_primary, _fm_secondary)
+
+.raleway-font
+  font-family 'Raleway', sans-serif
+.open-font
+  font-family 'Open Sans', sans-serif
+
+.pure-g [class *='pure-u'],
+.pure-g-r [class*="pure-u"]
+  @extends .raleway-font
+
+html,
+body
+  width 100%
+  height 100%
+  @extends .raleway-font
+
+.pure-form
+  input[type='text'], input[type='password'], input[type='email'], input[type='url'], input[type='date'], input[type='month'], input[type='time'], input[type='datetime'], input[type='datetime-local'], input[type='week'], input[type='number'], input[type='search'], input[type='tel'], input[type='color'], select, textarea
+    @extends .raleway-font
+  button
+    @extends .raleway-font
+
+_spacer = 5, 10, 20, 40, 60, 80, 100, 150
+
+for _val in _spacer
+  .spacer-{ _val }
+    height ( _val * 1px )
+
+
+.page
+  width 100%
+  .padding
+    padding 50px 100px
+
+#add-new
+  position fixed
+  right 55px
+  top 55px
+  background #F2F2F2
+  border none
+  border-radius 25px
+  box-shadow none
+  display inline-block
+  vertical-align middle
+  width 50px
+  height 50px
+  padding 0
+  margin 0
+  line-height 60px
+  text-align center
+  overflow hidden
+  transition all 0.5s ease
+  i
+    display block
+    font-size 28px
+    color rgba(#000, 0.3)
+  &:hover
+    background #EAEAEA
+
+.left
+  float left
+  text-align left
+
+.right
+  float right
+  text-align right
+
+a#logo
+  position fixed
+  right 50px
+  bottom 50px
+  _logo2x = 60px
+  width _logo2x
+  height _logo2x
+  border-radius (_logo2x / 2)
+  display block
+  box-shadow 0 0 50px 10px #FFF
+  img
+    width _logo2x
+    height _logo2x
+    display block
+
+#project-list
+  .project
+    display block
+    margin-bottom 30px
+    &.active
+      .project-info
+        background _fm_gradient
+        span
+          color #FFF !important
+  
+    .project-info
+      background #F2F2F2
+      display inline-block
+      vertical-align middle
+      padding 30px 50px 30px 100px
+      color #333
+      span
+        display inline-block
+        vertical-align middle
+        &.time-left
+          font-size 14px
+          font-weight 600
+          color #AAA
+        &.price
+          @extends .open-font
+          background rgba(#000, 0.1)
+          border-radius 5px
+          padding 3px 6px
+          font-size 12px
+          font-weight 700
+          margin-left 10px
+          color #FFF
+        &.title
+          display block
+          font-size 30px
+          font-weight 200
+          margin 5px 0 10px 0
+        &.description
+          display block
+          font-size 14px
+          font-weight 400
+          color #6F6F6F
+    &:hover
+      .project-actions
+        visibility visible
+        opacity 1
+    .project-actions
+      display inline-block
+      vertical-align middle
+      margin-left 20px
+      
+      transition opacity 0.5s ease 0.1s, visibility 0s ease
+      visibility hidden
+      opacity 0
+
+      .pure-button
+        background #F2F2F2
+        border none
+        border-radius 25px
+        box-shadow none
+        display inline-block
+        vertical-align middle
+        width 50px
+        height 50px
+        padding 0
+        margin 0
+        margin-left 20px
+        line-height 60px
+        text-align center
+        overflow hidden
+        transition all 0.5s ease
+        i
+          display block
+          font-size 28px
+          color rgba(#000, 0.3)
+        &.small-button
+          width 40px
+          height 40px
+          line-height 45px
+          i
+            font-size 22px
+
+        &:hover
+          background #EAEAEA
